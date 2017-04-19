@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="481.0" prefWidth="869.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MatchController">
+   <children>
+      <ScrollPane layoutX="10.0" layoutY="132.0" prefHeight="251.0" prefWidth="844.0">
+         <content>
+          <TableView fx:id="matchesTable" prefHeight="262.0" prefWidth="820.0">
+              <columns>
+                <TableColumn fx:id="localTeamColumn" prefWidth="128.0" text="Local Team">
+	                <cellValueFactory>
+				    </cellValueFactory>
+				</TableColumn>
+                <TableColumn fx:id="visitorTeamColumn" prefWidth="119.0" text="Visitor Team">
+	                <cellValueFactory>
+				    </cellValueFactory>
+				</TableColumn>
+                <TableColumn fx:id="localGoalsColumn" text="Local Goals">
+	                <cellValueFactory>
+				    </cellValueFactory>
+				</TableColumn>
+                <TableColumn fx:id="visitorGoalsColumn" prefWidth="85.0" text="Visitor Goals">
+	                <cellValueFactory>
+				    </cellValueFactory>
+				</TableColumn>
+                <TableColumn fx:id="cornersColumn" minWidth="9.0" prefWidth="60.0" text="Corners">
+		            <cellValueFactory>
+				    </cellValueFactory>
+			    </TableColumn>
+			    <TableColumn fx:id="foulsColumn" minWidth="0.0" prefWidth="43.0" text="Fouls">
+		            <cellValueFactory>
+				    </cellValueFactory>
+			    </TableColumn>
+			    <TableColumn fx:id="dateColumn" prefWidth="146.0" text="Date">
+		            <cellValueFactory>
+				    </cellValueFactory>
+			    </TableColumn>
+			    <TableColumn fx:id="refereeColumn" prefWidth="156.0" text="Referee">
+		            <cellValueFactory>
+				    </cellValueFactory>
+			    </TableColumn>
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <Label alignment="CENTER" layoutX="222.0" layoutY="15.0" prefHeight="50.0" prefWidth="421.0" text="Soccer Stats" textAlignment="RIGHT" textFill="#7d6605" textOverrun="CLIP">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="224.0" layoutY="76.0" prefHeight="50.0" prefWidth="421.0" text="Matches" textAlignment="RIGHT" textFill="#7d6605" textOverrun="CLIP">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="backBtn" layoutX="381.0" layoutY="414.0" mnemonicParsing="false" onAction="#back" prefHeight="40.0" prefWidth="103.0" text="Back" textFill="#7d6605">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Hyperlink fx:id="signOutLink" layoutX="728.0" layoutY="28.0" onAction="#signOut" text="Sign Out" textFill="#7d6605" underline="true" />
+   </children>
+</AnchorPane>

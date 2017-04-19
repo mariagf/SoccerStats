@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="481.0" prefWidth="684.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PlayerController">
+   <children>
+      <ScrollPane layoutX="114.0" layoutY="132.0" prefHeight="251.0" prefWidth="458.0">
+         <content>
+            <TableView fx:id="playerTable" prefHeight="262.0" prefWidth="455.0">
+              <columns>
+                <TableColumn fx:id="nameColumn" prefWidth="92.0" text="Name">
+	                <cellValueFactory>
+				    </cellValueFactory>
+				</TableColumn>
+                <TableColumn fx:id="lastnameColumn" prefWidth="81.0" text="Lastname">
+	                <cellValueFactory>
+				    </cellValueFactory>
+				</TableColumn>
+                <TableColumn fx:id="dateOfBirthColumn" prefWidth="111.0" text="Date of Birth">
+	                <cellValueFactory>
+				    </cellValueFactory>
+				</TableColumn>
+                <TableColumn fx:id="heightColumn" prefWidth="66.0" text="Height">
+	                <cellValueFactory>
+				    </cellValueFactory>
+				</TableColumn>
+                <TableColumn fx:id="teamColumn" prefWidth="92.0" text="Team">
+		            <cellValueFactory>
+				    </cellValueFactory>
+			    </TableColumn>
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <Label alignment="CENTER" layoutX="132.0" layoutY="20.0" prefHeight="50.0" prefWidth="421.0" text="Soccer Stats" textAlignment="RIGHT" textFill="#7d6605" textOverrun="CLIP">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="130.0" layoutY="82.0" prefHeight="50.0" prefWidth="421.0" text="Players" textAlignment="RIGHT" textFill="#7d6605" textOverrun="CLIP">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="backBtn" layoutX="291.0" layoutY="414.0" mnemonicParsing="false" onAction="#back" prefHeight="40.0" prefWidth="103.0" text="Back" textFill="#7d6605">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+	  <Hyperlink fx:id="signOutLink" layoutX="572.0" layoutY="33.0" onAction="#signOut" text="Sign Out" textFill="#7d6605" underline="true" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" />
+   </children>
+</AnchorPane>

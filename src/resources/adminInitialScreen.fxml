@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="471.0" prefWidth="465.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminInitialScreenController">
+   <children>
+      <Label alignment="CENTER" layoutX="24.0" layoutY="51.0" prefHeight="50.0" prefWidth="421.0" text="Soccer Stats" textAlignment="RIGHT" textFill="#7d6605" textOverrun="CLIP">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Text fill="#7d6605" layoutX="72.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hi,">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="userText" fill="#7d6605" layoutX="113.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#7d6605" layoutX="72.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="What can we do for you?">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+            <RadioButton fx:id="radioDisplay" layoutX="107.0" layoutY="217.0" lineSpacing="10.0" mnemonicParsing="false" text="Display" textFill="#7d6605">
+               <padding>
+                  <Insets bottom="15.0" />
+               </padding>
+            </RadioButton>
+            <RadioButton fx:id="radioAdd" layoutX="107.0" layoutY="250.0" mnemonicParsing="false" text="Add" textFill="#7d6605">
+               <padding>
+                  <Insets bottom="15.0" />
+               </padding>
+            </RadioButton>
+            <RadioButton fx:id="radioUpdateDelete" layoutX="107.0" layoutY="283.0" mnemonicParsing="false" text="Update or Delete" textFill="#7d6605" />
+
+      <Button fx:id="continueBtn" layoutX="319.0" layoutY="339.0" mnemonicParsing="false" onAction="#cont" text="Continue" textFill="#7d6605">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Hyperlink fx:id="signOutLink" layoutX="364.0" layoutY="26.0" onAction="#signOut" text="Sign Out" textFill="#7d6605" underline="true" />
+      <RadioButton fx:id="radioPlayers" layoutX="299.0" layoutY="279.0" mnemonicParsing="false" text="Players" textFill="#7d6605" />
+      <RadioButton fx:id="radioTeams" layoutX="299.0" layoutY="246.0" mnemonicParsing="false" text="Teams" textFill="#7d6605">
+         <padding>
+            <Insets bottom="15.0" />
+         </padding>
+      </RadioButton>
+      <RadioButton fx:id="radioMatches" layoutX="299.0" layoutY="213.0" lineSpacing="10.0" mnemonicParsing="false" text="Matches" textFill="#7d6605">
+         <padding>
+            <Insets bottom="15.0" />
+         </padding>
+      </RadioButton>
+   </children>
+</AnchorPane>

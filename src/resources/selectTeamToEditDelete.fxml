@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="481.0" prefWidth="1146.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SelectTeamToUpdateDeleteController">
+   <children>
+      <ScrollPane layoutX="10.0" layoutY="132.0" prefHeight="251.0" prefWidth="1087.0">
+         <content>
+          <TableView fx:id="teamsTable" prefHeight="253.0" prefWidth="1222.0">
+              <columns>
+              	<TableColumn fx:id="ticksColumn" prefWidth="42.0" text="">
+	                <cellValueFactory>
+				    </cellValueFactory>
+				</TableColumn>
+                <TableColumn fx:id="teamColumn" prefWidth="188.0" text="Team">
+	                <cellValueFactory>
+				    </cellValueFactory>
+				</TableColumn>
+                <TableColumn fx:id="coachColumn" prefWidth="188.0" text="Coach">
+	                <cellValueFactory>
+				    </cellValueFactory>
+				</TableColumn>
+                <TableColumn fx:id="cityColumn" minWidth="0.0" prefWidth="164.0" text="City">
+	                <cellValueFactory>
+				    </cellValueFactory>
+				</TableColumn>
+                <TableColumn fx:id="foundationDateColumn" minWidth="0.0" prefWidth="171.0" text="Foundation Date">
+	                <cellValueFactory>
+				    </cellValueFactory>
+				</TableColumn>
+				 <TableColumn fx:id="playersColumn" minWidth="7.0" prefWidth="189.0" text="Players">
+	                <cellValueFactory>
+				    </cellValueFactory>
+				</TableColumn>
+                <TableColumn fx:id="matchesColumn" minWidth="0.0" prefWidth="287.0" text="Matches">
+		            <cellValueFactory>
+				    </cellValueFactory>
+			    </TableColumn>
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <Label alignment="CENTER" layoutX="343.0" layoutY="20.0" prefHeight="50.0" prefWidth="421.0" text="Soccer Stats" textAlignment="RIGHT" textFill="#7d6605" textOverrun="CLIP">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="241.0" layoutY="82.0" prefHeight="50.0" prefWidth="634.0" text="Please select a match and an action" textAlignment="RIGHT" textFill="#7d6605" textOverrun="CLIP">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="343.0" layoutY="413.0" mnemonicParsing="false" onAction="#back" prefHeight="40.0" prefWidth="109.0" text="Back" textFill="#7d6605">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Hyperlink fx:id="signOutLink" layoutX="934.0" layoutY="33.0" onAction="#signOut" text="Sign Out" textFill="#7d6605" underline="true" />
+      <Button layoutX="499.0" layoutY="413.0" mnemonicParsing="false" onAction="#update" prefHeight="40.0" prefWidth="109.0" text="Update" textFill="#7d6605">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="653.0" layoutY="413.0" mnemonicParsing="false" onAction="#delete" prefHeight="40.0" prefWidth="109.0" text="Remove" textFill="#7d6605">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

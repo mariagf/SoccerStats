@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="483.0" prefWidth="454.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddTeamController">
+   <children>
+      <Label layoutX="137.0" layoutY="110.0" text="Add a new team!" textFill="#7d6605">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Text fill="#7d6605" layoutX="66.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Team Name">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="nameText" layoutX="197.0" layoutY="180.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Text fill="#7d6605" layoutX="66.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Coach">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="cityText" layoutX="197.0" layoutY="274.0" prefHeight="32.0" prefWidth="206.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Button layoutX="232.0" layoutY="400.0" mnemonicParsing="false" onAction="#addTeam" text="Add Team" textFill="#7d6605">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Text fill="#7d6605" layoutX="67.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date of Foundation" wrappingWidth="110.15625">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="41.0" prefHeight="50.0" prefWidth="421.0" text="Soccer Stats" textAlignment="RIGHT" textFill="#7d6605" textOverrun="CLIP">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button layoutX="92.0" layoutY="400.0" mnemonicParsing="false" onAction="#back" prefHeight="40.0" prefWidth="103.0" text="Back" textFill="#7d6605">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <TextField fx:id="coachText" layoutX="197.0" layoutY="227.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Text fill="#7d6605" layoutX="66.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Hyperlink fx:id="signOutLink" layoutX="382.0" layoutY="33.0" onAction="#signOut" text="Sign Out" textFill="#7d6605" underline="true" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" />
+      <DatePicker fx:id="datePicker" layoutX="197.0" layoutY="321.0" prefHeight="32.0" prefWidth="204.0" />
+   </children>
+</AnchorPane>

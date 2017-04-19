@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <children>
+      <Label alignment="CENTER" layoutX="32.0" layoutY="94.0" prefHeight="50.0" prefWidth="421.0" text="Soccer Stats" textAlignment="RIGHT" textFill="#7d6605" textOverrun="CLIP">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="loginBtn" layoutX="139.0" layoutY="299.0" mnemonicParsing="false" onAction="#logIn" prefHeight="43.0" prefWidth="103.0" text="Login" textAlignment="CENTER" textFill="#7d6605">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="signupBtn" layoutX="252.0" layoutY="299.0" mnemonicParsing="false" onAction="#signUp" prefHeight="43.0" prefWidth="103.0" text="Sign Up" textAlignment="CENTER" textFill="#7d6605">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="passwordText" layoutX="136.0" layoutY="250.0" prefHeight="27.0" prefWidth="221.0" />
+      <TextField fx:id="usernameText" layoutX="136.0" layoutY="194.0" prefHeight="27.0" prefWidth="221.0" />
+      <Text fill="#7d6605" layoutX="136.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#7d6605" layoutX="138.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
